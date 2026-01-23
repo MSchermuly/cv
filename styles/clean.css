@@ -1,0 +1,12 @@
+#cv {
+    margin: auto;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.code {
+    color: dimgrey;
+    background-color: cornsilk;
+}
+
