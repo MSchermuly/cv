@@ -1,56 +1,87 @@
 <!doctype html>
 <html lang="de">
-<head>
-  <meta charset="utf-8">
-  <title>CV MSchermuly</title>
-  <link id="theme" rel="stylesheet" href="styles/clean.css">
-    <meta name="description" contents="CV of Matthias Schermuly, Software Engineer"/>
-    <meta name="credits" contents="Thanks Chris Lattner for inspiring simple CV page."/>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>CV MSchermuly</title>
+    <!-- separate layouting from decoration - add more styles later if desired -->
+    <link id="layout" rel="stylesheet" href="styles/layout.css" />
+    <link id="theme" rel="stylesheet" href="styles/lean.css" />
+    <meta name="description" contents="CV of Matthias Schermuly, Software Engineer" />
+    <meta name="credits" contents="Thanks Chris Lattner for inspiring simple CV page." />
+  </head>
+  <body>
+    <main id="cv">
+      <section>
+        <img src="img/profile_sw.jpg" />
+        <h1>Matthias Schermuly</h1>
+        <p>Software Engineer</p>
+        <p>Bachelor of Science, Computer Science</p>
+        <p>xing: <a href="https://www.xing.com/profile/Matthias_Schermuly">profile/Matthias_Schermuly</a></p>
+      </section>
 
-<main id="cv">
-  <section class="identity">
-    <a id="profile_link" href="img/profile_sw.jpg">
-      <img align="right" width="230" src="img/profile_sw.jpg"/>
-    </a>
-    <h1 id="name">Matthias Schermuly</h1>
-    <p class="title">Software Engineer</p>
-    <p>Bachelor of Science, Computer Science</p>
-    <p>xing: <a href="https://www.xing.com/profile/Matthias_Schermuly">profile/Matthias_Schermuly</a></p>
+      <div class="divider"></div>
 
-  </section>
-    
-  <section class="jobs">
-      <h2>Werdegang</h2>
-      <ul>
-          <li> 11.2019 - heute Software Engineer Sdui GmbH</li>
-          <li> bis 09.2019 Werkstudent Fraunhofer IIS/EAS</li>
-          <li> bis 09.2019 Bachelor of Science, Computer Science, TU Dresden</li>
-      </ul>
-  </section>
+      <section>
+        <h2>Werdegang</h2>
+        <ul>
+          <li>11.2019 - heute Software Engineer Sdui GmbH</li>
+          <li>bis 09.2019 Werkstudent Fraunhofer IIS/EAS</li>
+          <li>bis 09.2019 Bachelor of Science, Computer Science, TU Dresden</li>
+        </ul>
+      </section>
 
-  <section class="experience">
-    <h2>Erfahrung</h2>
-    <ul>
-      <li>
-          Software Engineer <a href="https://www.sdui.de/">Sdui</a> in Koblenz
-          <p>Neben klassischem MVC mit Laravel habe ich mich viel in die Entwicklung von Domänen-Komponenten in der Schulorganisation, darunter Stundenpläne und Digitales Klassenbuch, eingebracht.</p>
-          <p>ETL (Extract, Transform, Load) Pipes unzuverlässiger Daten und Integration externer Webservices. Ein Highlight der Arbeit war die Implementierung einer Öffentlichen API, die uns die Kontrolle über die Datenspezifikation gegeben hat (Inversion of Control).</p>
-          <p>Zu dieser Zeit habe ich viel über lesbaren Code gelernt und meinen persönlichen Stil gefunden, warum DRY nicht immer Sinn ergibt, warum Gherkin-Style eine wunderbare Idee ist, wie Software unter Beachtung von Conwey's Law entsteht und dass <code class="code">// TODO:</code> Kommentare für immer liegen bleiben werden.</p>
-      </li>
-      <li>
-          Werkstudent <a href="https://www.iis.fraunhofer.de/de/ff/eas.html"> Fraunhofer IIS/EAS</a> in Dresden
-          <p>Testautomatisierung mit Python. Das Projekt meines Teams befasste sich mit Entwurfsautomatisierung Analoger Schaltungen.</p>
-          <p>Bei der Testsuite handelte es sich nicht um übliche Software-Tests, sondern um Verifikationsroutinen in Drittsoftware. Schaltungsentwürfe wurden auf Einhaltung von Entwurfsregeln und Feldeffekten geprüft.</p>
-          <p>Meine Aufgabe war die Ausführung der CAD Software Cadence und der Verifikations Software Calibre zu automatisieren. Im weiteren Verlauf habe ich die Ergebnisse ausgewertet und den Ingenieuren zugänglich gemacht. Abschließend habe ich die Testsuite in eine CI/CD Pipeline eingepflegt.</p>
-          <p>Zu der Zeit habe ich viel über die Testprinzipien des <a href="https://istqb.org/">ISTQB</a>, <code class="code">git</code>, Python, das Zen of Python lieben und die Arbeit in einem öffentlichen Institut gelernt.</p>
-          <p>Meine Zeit als Werkstudent beendete mit dem Abschluss meienr Bachelor-Arbeit, die ich im Haus schreiben durfte.</p>
-      </li>
-    </ul>
-  </section>
-</main>
-    
-<script src="script.js"></script>
-</body>
+      <div class="divider"></div>
+
+      <section class="experience">
+        <h2>Erfahrung</h2>
+        <ul>
+          <li>
+            Software Engineer <a href="https://www.sdui.de/">Sdui</a> in Koblenz
+            <p>
+              Neben klassischem MVC mit Laravel habe ich mich viel in die Entwicklung von Domänen-Komponenten in der
+              Schulorganisation, darunter Stundenpläne und Digitales Klassenbuch, eingebracht.
+            </p>
+            <p>
+              ETL (Extract, Transform, Load) Pipes unzuverlässiger Daten und Integration externer Webservices. Ein
+              Highlight der Arbeit war die Implementierung einer Öffentlichen API, die uns die Kontrolle über die
+              Datenspezifikation gegeben hat (Inversion of Control).
+            </p>
+            <p>
+              Zu dieser Zeit habe ich viel über lesbaren Code gelernt und meinen persönlichen Stil gefunden, warum DRY
+              nicht immer Sinn ergibt, warum Gherkin-Style eine wunderbare Idee ist, wie Software unter Beachtung von
+              Conwey's Law entsteht und dass <code class="code">// TODO:</code> Kommentare für immer liegen bleiben
+              werden.
+            </p>
+          </li>
+          <li>
+            Werkstudent <a href="https://www.iis.fraunhofer.de/de/ff/eas.html"> Fraunhofer IIS/EAS</a> in Dresden
+            <p>
+              Testautomatisierung mit Python. Das Projekt meines Teams befasste sich mit Entwurfsautomatisierung
+              Analoger Schaltungen.
+            </p>
+            <p>
+              Bei der Testsuite handelte es sich nicht um übliche Software-Tests, sondern um Verifikationsroutinen in
+              Drittsoftware. Schaltungsentwürfe wurden auf Einhaltung von Entwurfsregeln und Feldeffekten geprüft.
+            </p>
+            <p>
+              Meine Aufgabe war die Ausführung der CAD Software Cadence und der Verifikations Software Calibre zu
+              automatisieren. Im weiteren Verlauf habe ich die Ergebnisse ausgewertet und den Ingenieuren zugänglich
+              gemacht. Abschließend habe ich die Testsuite in eine CI/CD Pipeline eingepflegt.
+            </p>
+            <p>
+              Zu der Zeit habe ich viel über die Testprinzipien des <a href="https://istqb.org/">ISTQB</a>,
+              <code class="code">git</code>, Python, das Zen of Python lieben und die Arbeit in einem öffentlichen
+              Institut gelernt.
+            </p>
+            <p>
+              Meine Zeit als Werkstudent beendete mit dem Abschluss meienr Bachelor-Arbeit, die ich im Haus schreiben
+              durfte.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>

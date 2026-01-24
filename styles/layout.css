@@ -1,0 +1,10 @@
+#cv {
+    margin: auto;
+    width: 800px;
+}
+
+img {
+    width: 230px;
+    float: right;
+    /*margin: 0 0 1rem 1rem;*/
+}

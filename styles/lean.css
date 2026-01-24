@@ -1,6 +1,5 @@
 #cv {
     margin: auto;
-    max-width: 800px;
     border: 1px solid #ccc;
     padding: 1rem;
 }
@@ -10,3 +9,8 @@
     background-color: cornsilk;
 }
 
+.divider {
+    /* comment out add spacing between sections */
+    display: none;
+    padding: 1rem;
+}
