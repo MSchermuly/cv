@@ -5,20 +5,25 @@
     <title>CV MSchermuly</title>
     <!-- separate layouting from decoration - add more styles later if desired -->
     <link id="layout" rel="stylesheet" href="styles/layout.css" />
-    <link id="theme" rel="stylesheet" href="styles/lean.css" />
+    <link id="theme" rel="stylesheet" href="styles/glass.css" />
     <meta name="description" contents="CV of Matthias Schermuly, Software Engineer" />
     <meta name="credits" contents="Thanks Chris Lattner for inspiring simple CV page." />
   </head>
   <body>
 
     <nav>
+      <span>lang:</span>
       <a href="index.html">en</a>
+      <span>style:</span>
+      <a onclick="setStyle('lean')" href="javascript:void(0);">lean</a>
+      <span>|</span>
+      <a onclick="setStyle('glass')" href="javascript:void(0);">glass</a>
     </nav>
 
     <main id="cv">
 
       <section>
-        <img src="img/profile_sw.jpg" />
+        <img id="profile_img" src="img/profile_sw.jpg" />
         <h1>Matthias Schermuly</h1>
         <p>Software-Entwickler</p>
         <p>Bachelor of Science, Informatik</p>

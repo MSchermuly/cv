@@ -6,6 +6,10 @@ nav {
     width: 800px;
 }
 
+nav a, span {
+    padding-right: 1em;
+}
+
 #cv {
     margin: auto;
     width: 800px;
