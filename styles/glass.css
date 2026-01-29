@@ -1,17 +1,30 @@
+html, body {
+    min-height: 100vh;
+}
+
 body {
     background: #3F5EFB;
     background: linear-gradient(330deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
     font-family: "Trebuchet MS", Verdana, sans-serif;
     text-decoration: none;
     color: white;
+    background-attachment: fixed;
 }
 
 a::before {
     content: "➤";
 }
+
 a {
     text-decoration: none;
+    padding: 0.5em;
     color: lightblue;
+}
+
+a:hover {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+
 }
 
 nav {

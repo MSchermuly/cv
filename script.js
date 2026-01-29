@@ -12,3 +12,8 @@ function setLang(lang) {
   document.body.className = lang;
   document.documentElement.lang = lang;
 }
+
+function toggleSection(name){
+  const el = document.getElementById(name);
+  el.hidden = !el.hidden;
+}
