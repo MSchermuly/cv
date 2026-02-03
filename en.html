@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CV MSchermuly</title>
+    <!-- separate layouting from decoration - add more styles later if desired -->
+    <link id="layout" rel="stylesheet" href="../styles/layout.css" />
+    <link id="theme" rel="stylesheet" href="../styles/glass.css" />
+    <meta name="description" contents="CV of Matthias Schermuly, Software Engineer" />
+    <meta name="credits" contents="Thanks Chris Lattner for inspiring simple CV page." />
+  </head>
+  <body>
+
+    <nav>
+      <span>lang:</span>
+      <a href="../index.html">de</a>
+      <span>style:</span>
+      <a onclick="setStyle('lean')" href="javascript:void(0);">lean</a>
+      <span>|</span>
+      <a onclick="setStyle('glass')" href="javascript:void(0);">glass</a>
+    </nav>
+
+    <main id="cv">
+
+      <section>
+        <img id="profile_img" src="img/profile.jpg" />
+        <h1>Matthias Schermuly</h1>
+        <p>Software Engineer</p>
+        <p>B.Sc., Computer Science</p>
+        <p>Xing: <a href="https://www.xing.com/profile/Matthias_Schermuly">profile/Matthias_Schermuly</a></p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Career</h2>
+        <ul>
+          <li>11/2019 - today software engineer Sdui GmbH</li>
+          <li>until 09/2019 working student Fraunhofer IIS/EAS</li>
+          <li>until 09/2019 Bachelor of Science, Computer Science, TU Dresden</li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>The Brief</h2>
+        <ul>
+          <li>Laravel MVC</li>
+          <li>Backend</li>
+          <li>ETL Pipelines</li>
+          <li>Interface-Design</li>
+          <li>File and data base migration</li>
+          <li>StartUp -&gt; ScaleUp -&gt; Company</li>
+          <li>Public institute</li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2><a onclick="toggleSection('experience')" href="javascript:void(0);">Experience</a></h2>
+        <ul id="experience" hidden>
+          <li>
+            Software Engineer <a href="https://www.sdui.de/">Sdui</a>, Koblenz
+            <p>
+              In addition to classic MVC with Laravel, I have been heavily involved in the development of
+              domain components in the school organization, including timetables and digital class registers.
+            </p>
+            <p>
+              ETL (Extract, Transform, Load) pipes of unreliable data and integration of external web services.
+              A highlight of the work was the implementation of a public API that gave us control over the data
+              specification (inversion of control).
+            </p>
+            <p>
+              During this time, I learned a lot about readable code and found my personal style, why DRY
+              doesn't always make sense, why Gherkin style is a wonderful idea, how software is created in accordance
+              with Conway's Law, and that <code class="code">// TODO:</code> comments will remain forever.
+            </p>
+          </li>
+          <li>
+            Working student <a href="https://www.iis.fraunhofer.de/de/ff/eas.html"> Fraunhofer IIS/EAS</a>, Dresden
+            <p>
+              Test automation with Python. My team's project focused on design automation for analog circuits.
+            </p>
+            <p>
+              The test suite did not consist of regular software tests, but rather verification routines in
+              third-party software. Circuit designs were checked for compliance with design rules and field effects.
+            </p>
+            <p>
+              My task was to automate the execution of the eCAD software Cadence and the verification software Calibre.
+              I then evaluated the results and made them available to the engineers. Finally, I integrated the
+              test suite into a CI/CD pipeline.
+            </p>
+            <p>
+              At that time, I learned a lot about the testing principles of the <a href="https://istqb.org/">ISTQB</a>,
+              Python, loving the Zen of Python, and working in a public institute.
+            </p>
+            <p>
+              I finished my time as a working student after a year and a half with my bachelor's thesis,
+              which I was allowed to write in-house.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
