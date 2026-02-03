@@ -3,12 +3,12 @@ html, body {
 }
 
 body {
-    background: #3F5EFB;
-    background: linear-gradient(330deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    background: #ffffff;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(199, 215, 255, 1) 100%);
     font-family: "Trebuchet MS", Verdana, sans-serif;
     text-decoration: none;
-    color: white;
     background-attachment: fixed;
+    color: #314049
 }
 
 a::before {
@@ -18,7 +18,8 @@ a::before {
 a {
     text-decoration: none;
     padding: 0.5em;
-    color: lightblue;
+    color: #3c675f;
+
 }
 
 a:hover {
