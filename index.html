@@ -5,20 +5,26 @@
     <title>CV MSchermuly</title>
     <!-- separate layouting from decoration - add more styles later if desired -->
     <link id="layout" rel="stylesheet" href="styles/layout.css" />
-    <link id="theme" rel="stylesheet" href="styles/glass.css" />
+    <link id="theme" rel="stylesheet" href="styles/lean.css" />
     <meta name="description" contents="CV of Matthias Schermuly, Software Engineer" />
     <meta name="credits" contents="Thanks Chris Lattner for inspiring simple CV page." />
   </head>
   <body>
 
+    <!--
     <nav>
-      <span>lang:</span>
-      <a href="en.html">en</a>
-      <span>style:</span>
-      <a onclick="setStyle('lean')" href="javascript:void(0);">lean</a>
-      <span>|</span>
-      <a onclick="setStyle('glass')" href="javascript:void(0);">glass</a>
+      <span class="keyvalue">
+        <span>lang:</span>
+        <a href="en.html">en</a>
+      </span>
+      <span class="keyvalue">
+        <span>theme:</span>
+        <a onclick="setStyle('lean')" href="javascript:void(0);">lean</a>
+        <span>|</span>
+        <a onclick="setStyle('glass')" href="javascript:void(0);">glass</a>
+      </span>
     </nav>
+    -->
 
     <main id="cv">
 
@@ -107,6 +113,19 @@
         </ul>
       </section>
     </main>
+
+    <footer>
+      <span class="keyvalue">
+        <span>lang:</span>
+        <a href="en.html">en</a>
+      </span>
+      <span class="keyvalue">
+        <span>theme:</span>
+        <a onclick="setStyle('lean')" href="javascript:void(0);">lean</a>
+        <span>|</span>
+        <a onclick="setStyle('glass')" href="javascript:void(0);">glass</a>
+      </span>
+    </footer>
 
     <script src="script.js"></script>
   </body>

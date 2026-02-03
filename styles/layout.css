@@ -1,13 +1,30 @@
-nav {
+body {
+    position: relative;
+}
+
+nav, footer {
     position: sticky;
-    top: 0;
     margin: auto;
     padding: 1em;
     width: 800px;
 }
 
+footer {
+    bottom: 0l
+}
+
+nav {
+    top: 0;
+}
+
+/*
 nav a, span {
     padding-right: 1em;
+}
+*/
+.keyvalue {
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 #cv {
