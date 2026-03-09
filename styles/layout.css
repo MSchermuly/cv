@@ -37,3 +37,12 @@ img {
     float: right;
     /*margin: 0 0 1rem 1rem;*/
 }
+
+/* Sprachumschaltung: immer nur eine Sprache sichtbar */
+body.de .lang-en {
+    display: none;
+}
+
+body.en .lang-de {
+    display: none;
+}
