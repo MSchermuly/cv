@@ -6,6 +6,7 @@
     <!-- separate layouting from decoration - add more styles later if desired -->
     <link id="layout" rel="stylesheet" href="styles/layout.css" />
     <link id="theme" rel="stylesheet" href="styles/lean.css" />
+    <link id="chrome" rel="stylesheet" href="styles/macos-window.css" />
     <meta name="description" contents="CV of Matthias Schermuly, Software Engineer" />
     <meta name="credits" contents="Thanks Chris Lattner for inspiring simple CV page." />
   </head>
@@ -26,7 +27,18 @@
     </nav>
     -->
 
-    <main id="cv">
+    <div class="mac-window" role="group" aria-label="CV window">
+      <div class="mac-titlebar">
+        <div class="mac-controls" aria-hidden="true">
+          <span class="mac-dot mac-dot--close"></span>
+          <span class="mac-dot mac-dot--min"></span>
+          <span class="mac-dot mac-dot--zoom"></span>
+        </div>
+        <div class="mac-title">CV MSchermuly</div>
+      </div>
+
+      <div class="mac-window-body">
+        <main id="cv">
 
       <section>
         <img id="profile_img" src="img/profile.jpg" />
@@ -109,20 +121,22 @@
           </li>
         </ul>
       </section>
-    </main>
+        </main>
+      </div>
 
-    <footer>
-      <span class="keyvalue">
-        <span>lang:</span>
-        <a href="index.html">de</a>
-      </span>
-      <span class="keyvalue">
-        <span>theme:</span>
-        <a onclick="setStyle('lean')" href="javascript:void(0);">lean</a>
-        <span>|</span>
-        <a onclick="setStyle('glass')" href="javascript:void(0);">glass</a>
-      </span>
-    </footer>
+      <footer>
+        <span class="keyvalue">
+          <span>lang:</span>
+          <a href="index.html">de</a>
+        </span>
+        <span class="keyvalue">
+          <span>theme:</span>
+          <a onclick="setStyle('lean')" href="javascript:void(0);">lean</a>
+          <span>|</span>
+          <a onclick="setStyle('glass')" href="javascript:void(0);">glass</a>
+        </span>
+      </footer>
+    </div>
 
     <script src="script.js"></script>
   </body>
