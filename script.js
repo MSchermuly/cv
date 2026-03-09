@@ -3,19 +3,15 @@ function setStyle(name) {
   document.getElementById("theme").href = "styles/" + name + ".css";
 
   return;
-  //if (name == 'lean')
-  //  document.getElementById("profile_img").src = "img/profile_sw.jpg";
-  //else
-  //  document.getElementById("profile_img").src = "img/profile.jpg";
 }
 
-/* change language */
-function setLang(lang) {
-  document.body.className = lang;
-  document.documentElement.lang = lang;
-}
-
-function toggleSection(name){
-  const el = document.getElementById(name);
-  el.hidden = !el.hidden;
-}
+document.addEventListener('DOMContentLoaded', () => {
+  // Theme-Wechsel
+  document.querySelectorAll('a[data-theme]').forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      const theme = link.getAttribute('data-theme');
+      setStyle(theme);
+    });
+  });
+});

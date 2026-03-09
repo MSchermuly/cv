@@ -14,8 +14,3 @@ nav, footer {
     background-color: cornsilk;
 }
 
-.divider {
-    /* comment out add spacing between sections */
-    display: none;
-    padding: 1rem;
-}

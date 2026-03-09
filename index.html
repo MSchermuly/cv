@@ -6,24 +6,27 @@
     <!-- separate layouting from decoration - add more styles later if desired -->
     <link id="layout" rel="stylesheet" href="styles/layout.css" />
     <link id="theme" rel="stylesheet" href="styles/lean.css" />
-    <meta name="description" contents="CV of Matthias Schermuly, Software Engineer" />
-    <meta name="credits" contents="Thanks Chris Lattner for inspiring simple CV page." />
+    <meta name="description" content="CV of Matthias Schermuly, Software Engineer." />
+    <meta name="credits" content="Thanks Chris Lattner for inspiring simple CV page." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="CV MSchermuly" />
+    <meta property="og:description" content="CV of Matthias Schermuly, Software Engineer." />
+    <meta property="og:image" content="img/profile.jpg" />
   </head>
   <body class="de">
 
     <main id="cv">
 
-      <!-- Deutsche Version -->
-      <div class="lang-section lang-de">
         <section>
-          <img id="profile_img_de" src="img/profile.jpg" />
+          <img id="profile_img_de" src="img/profile.jpg" alt="Porträt von Matthias Schermuly" />
           <h1>Matthias Schermuly</h1>
           <p>Software-Entwickler</p>
           <p>Bachelor of Science, Informatik</p>
+          <p>Neuwied, Deutschland</p>
           <p>Xing: <a href="https://www.xing.com/profile/Matthias_Schermuly">profile/Matthias_Schermuly</a></p>
         </section>
-
-        <div class="divider"></div>
 
         <section>
           <h2>Werdegang</h2>
@@ -33,8 +36,6 @@
             <li>bis 09.2019 Bachelor of Science, Computer Science, TU Dresden</li>
           </ul>
         </section>
-
-        <div class="divider"></div>
 
         <section>
           <h2>In der Kürze</h2>
@@ -49,60 +50,14 @@
           </ul>
         </section>
 
-      </div>
-
-      <!-- Englische Version -->
-      <div class="lang-section lang-en">
-        <section>
-          <img id="profile_img_en" src="img/profile.jpg" />
-          <h1>Matthias Schermuly</h1>
-          <p>Software Engineer</p>
-          <p>B.Sc., Computer Science</p>
-          <p>Xing: <a href="https://www.xing.com/profile/Matthias_Schermuly">profile/Matthias_Schermuly</a></p>
-        </section>
-
-        <div class="divider"></div>
-
-        <section>
-          <h2>Career</h2>
-          <ul>
-            <li>11/2019 - today software engineer Sdui GmbH</li>
-            <li>until 09/2019 working student Fraunhofer IIS/EAS</li>
-            <li>until 09/2019 Bachelor of Science, Computer Science, TU Dresden</li>
-          </ul>
-        </section>
-
-        <div class="divider"></div>
-
-        <section>
-          <h2>The Brief</h2>
-          <ul>
-            <li>Laravel MVC</li>
-            <li>Backend</li>
-            <li>ETL Pipelines</li>
-            <li>Interface-Design</li>
-            <li>File and data base migration</li>
-            <li>StartUp -&gt; ScaleUp -&gt; Company</li>
-            <li>Public institute</li>
-          </ul>
-        </section>
-
-      </div>
-
     </main>
 
     <footer>
       <span class="keyvalue">
-        <span>lang:</span>
-        <a onclick="setLang('de')" href="javascript:void(0);">de</a>
-        <span>|</span>
-        <a onclick="setLang('en')" href="javascript:void(0);">en</a>
-      </span>
-      <span class="keyvalue">
         <span>theme:</span>
-        <a onclick="setStyle('lean')" href="javascript:void(0);">lean</a>
+        <a href="#" data-theme="lean">lean</a>
         <span>|</span>
-        <a onclick="setStyle('glass')" href="javascript:void(0);">glass</a>
+        <a href="#" data-theme="glass">glass</a>
       </span>
     </footer>
 
